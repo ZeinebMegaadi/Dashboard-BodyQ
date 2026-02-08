@@ -18,7 +18,7 @@ const Navbar = () => {
             borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
         }}>
             <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-accent-lime)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <div style={{ width: '24px', height: '24px', background: 'var(--color-accent-lime)', borderRadius: '50%' }}></div>
+                
                 BodyQ
             </div>
 

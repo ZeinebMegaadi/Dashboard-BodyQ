@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Play, TrendingUp, Flame, Apple } from 'lucide-react';
+import { Play, TrendingUp, Flame, Apple, Dumbbell } from 'lucide-react';
 
 const DashboardPreview = () => {
     return (
@@ -65,20 +65,31 @@ const DashboardPreview = () => {
 
                 {/* Phone Mockup */}
                 <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    style={{
-                        width: '320px',
-                        height: '640px',
-                        background: '#000',
-                        borderRadius: '40px',
-                        border: '8px solid #333',
-                        position: 'relative',
-                        overflow: 'hidden',
-                        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
-                    }}
-                >
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  whileHover={{
+    scale: 1.06,
+    boxShadow: `
+      0 0 40px rgba(187, 110, 231, 0.25),
+      0 0 80px rgba(134, 59, 246, 0.25),
+      0 25px 50px -12px rgba(0, 0, 0, 0.6)
+    `
+  }}
+  transition={{
+    duration: 0.4,
+    ease: 'easeOut'
+  }}
+  style={{
+    width: '320px',
+    height: '640px',
+    background: '#000',
+    borderRadius: '40px',
+    border: '8px solid #333',
+    position: 'relative',
+    overflow: 'hidden'
+  }}
+>
+
                     {/* Status Bar */}
                     <div style={{ height: '30px', background: '#000', width: '100%', position: 'absolute', top: 0, zIndex: 10 }}></div>
 
@@ -89,9 +100,24 @@ const DashboardPreview = () => {
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <div>
                                 <div style={{ fontSize: '0.8rem', color: '#888' }}>Good Morning</div>
-                                <div style={{ fontSize: '1.4rem', fontWeight: 'bold' }}>Alex</div>
+                                <div style={{ fontSize: '1.4rem', fontWeight: 'bold' }}>Mortadha</div>
                             </div>
-                            <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: '#333' }}></div>
+                            <div
+  style={{
+    width: '40px',
+    height: '40px',
+    borderRadius: '50%',
+    background: 'linear-gradient(135deg, #6ee7b7, #caf63b)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '14px',
+    fontWeight: 'bold',
+    color: '#000'
+  }}
+>
+  M
+</div>
                         </div>
 
                         {/* Daily Stats */}
@@ -124,7 +150,20 @@ const DashboardPreview = () => {
                         <div>
                             <div style={{ fontWeight: 'bold', marginBottom: '10px' }}>Today&apos;s Plan</div>
                             <div style={{ background: '#2c2c2e', padding: '15px', borderRadius: '15px', display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                <div style={{ width: '50px', height: '50px', background: '#444', borderRadius: '10px' }}></div>
+                                <div
+  style={{
+    width: '50px',
+    height: '50px',
+    background: '#444',
+    borderRadius: '10px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }}
+>
+  <Dumbbell size={24} color="var(--color-accent-lime)" />
+</div>
+
                                 <div>
                                     <div style={{ fontWeight: 600 }}>Upper Body Power</div>
                                     <div style={{ fontSize: '0.8rem', color: '#888' }}>45 mins • Intermediate</div>
