@@ -1,6 +1,8 @@
 # BodyQ - your customised fitness App
 
-## how to use it
+## 1. WEBSITE
+
+### how to use it
 
 Install the document
 
@@ -33,3 +35,5 @@ npm run dev
 cd backend
 npm start
 ```
+
+## 2. APP
