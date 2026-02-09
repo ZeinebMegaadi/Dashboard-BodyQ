@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "BodyQ",
+    "slug": "bodyq-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "sdkVersion": "54.0.0",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.bodyq.mobile" },
+    "android": { "package": "com.bodyq.mobile" },
+    "scheme": "bodyq"
+  }
+}

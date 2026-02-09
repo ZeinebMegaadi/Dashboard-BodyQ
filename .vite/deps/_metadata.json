@@ -1,0 +1,46 @@
+{
+  "hash": "1e530fa9",
+  "configHash": "4b36ca04",
+  "lockfileHash": "984cce87",
+  "browserHash": "cd3aea28",
+  "optimized": {
+    "framer-motion": {
+      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
+      "file": "framer-motion.js",
+      "fileHash": "f750452e",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "c5d6d6e8",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "771a91fd",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "3c1210fc",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "6484657c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-HEFH33VQ": {
+      "file": "chunk-HEFH33VQ.js"
+    },
+    "chunk-H52QBHD2": {
+      "file": "chunk-H52QBHD2.js"
+    }
+  }
+}
