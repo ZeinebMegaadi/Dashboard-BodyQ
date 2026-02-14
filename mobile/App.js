@@ -16,6 +16,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import SignIn from "./screens/SignIn";
 import SignUp from "./screens/SignUp";
+import Profile from "./screens/Profile";
+import { supabase } from "./database/supabase";
 
 // Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
@@ -37,6 +39,16 @@ export default function App() {
           "Inter-Regular": Inter_400Regular,
           "Inter-SemiBold": Inter_600SemiBold,
         });
+
+        // Test Supabase connection
+        console.log('🔍 Testing Supabase connection...');
+        const { data, error } = await supabase.auth.getSession();
+        if (error) {
+          console.log('❌ Supabase connection error:', error.message);
+        } else {
+          console.log('✅ Successfully connected to Supabase!');
+          console.log('Session status:', data.session ? 'User logged in' : 'No active session');
+        }
       } catch (e) {
         console.warn(e);
       } finally {
@@ -74,6 +86,7 @@ export default function App() {
           >
             <Stack.Screen name="SignIn" component={SignIn} />
             <Stack.Screen name="SignUp" component={SignUp} />
+            <Stack.Screen name="Profile" component={Profile} />
           </Stack.Navigator>
         </NavigationContainer>
       </View>
